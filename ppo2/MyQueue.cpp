@@ -42,12 +42,40 @@ int MyQueue::dequeue()
 
 int MyQueue::minimum()
 {
-	return 0;
+	if (outStack.size() > 0 && inStack.size() > 0) {
+		int inMin = inStack.top().min;
+		int outMin = outStack.top().min;
+		return (inMin < outMin ? inMin : outMin);
+	}
+	else if (outStack.size() > 0) {
+		return (outStack.top().min);
+	}
+	else if (inStack.size() > 0) {
+		return (inStack.top().min);
+	}
+	else {
+		assert(inStack.size() + outStack.size() != 0);
+		return 0;
+	}
 }
 
 int MyQueue::maximum()
 {
-	return 0;
+	if (outStack.size() > 0 && inStack.size() > 0) {
+		int inMax = inStack.top().max;
+		int outMax = outStack.top().max;
+		return (inMax > outMax ? inMax : outMax);
+	}
+	else if (outStack.size() > 0) {
+		return (outStack.top().max);
+	}
+	else if (inStack.size() > 0) {
+		return (inStack.top().max);
+	}
+	else {
+		assert(inStack.size() + outStack.size() != 0);
+		return 0;
+	}
 }
 
 vector<int> MyQueue::getQueue()
