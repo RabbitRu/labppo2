@@ -42,13 +42,13 @@ namespace UnitTest1
 			test.push_back(7);
 
 			Assert::AreEqual(testQueue.dequeue(), 5);
-			//Assert::IsTrue(testQueue.getQueue() == test, L"D1", LINE_INFO());
+			Assert::IsTrue(testQueue.getQueue() == test, L"D1", LINE_INFO());
 			test.erase(test.begin());
 			Assert::AreEqual(testQueue.dequeue(), 6);
-			//Assert::IsTrue(testQueue.getQueue() == test, L"D2", LINE_INFO());
+			Assert::IsTrue(testQueue.getQueue() == test, L"D2", LINE_INFO());
 			test.erase(test.begin());
 			Assert::AreEqual(testQueue.dequeue(), 7);
-			//Assert::IsTrue(testQueue.getQueue() == test, L"D3", LINE_INFO());
+			Assert::IsTrue(testQueue.getQueue() == test, L"D3", LINE_INFO());
 		}
 
 		TEST_METHOD(TestMax)

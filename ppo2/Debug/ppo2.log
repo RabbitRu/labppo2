@@ -1,6 +1,5 @@
 ﻿  MyQueue.cpp
-  Создание кода...
-  Компиляция...
-  ppo2.cpp
-  Создание кода...
+c:\users\ultranb\documents\visual studio 2017\projects\lppo2\ppo2\myqueue.cpp(62): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\ultranb\documents\visual studio 2017\projects\lppo2\ppo2\myqueue.cpp(68): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\ultranb\documents\visual studio 2017\projects\lppo2\ppo2\myqueue.cpp(70): warning C4018: <: несоответствие типов со знаком и без знака
   ppo2.vcxproj -> C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\lppo2\Debug\ppo2.lib

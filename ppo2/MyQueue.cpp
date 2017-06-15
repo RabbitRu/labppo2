@@ -52,7 +52,23 @@ int MyQueue::maximum()
 
 vector<int> MyQueue::getQueue()
 {
-	return vector<int>();
+	vector<Element> result;
+	vector<int> iresult;
+
+	while (!outStack.empty()) {
+		result.push_back(outStack.top());
+		outStack.pop();
+	}
+	for (int i = 0; i < result.size(); i++)outStack.push(result[result.size() - i - 1]);
+
+	while (!inStack.empty()) {
+		result.insert(result.begin() + outStack.size(), inStack.top());
+		inStack.pop();
+	}
+	for (int i = outStack.size(); i < result.size(); i++)inStack.push(result[i]);
+
+	for (int i = 0; i < result.size(); i++)iresult.push_back(result[i].value);
+	return iresult;
 }
 
 void MyQueue::stackPush(stack<Element>& stack, int value)
