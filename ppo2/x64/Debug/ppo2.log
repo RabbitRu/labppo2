@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  ppo2.cpp
+  MyQueue.cpp
+c:\users\ultranb\documents\visual studio 2015\projects\ppo2\ppo2\myqueue.cpp(95): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода...
+  ppo2.vcxproj -> C:\Users\Ultranb\Documents\Visual Studio 2015\Projects\ppo2\x64\Debug\ppo2.lib
