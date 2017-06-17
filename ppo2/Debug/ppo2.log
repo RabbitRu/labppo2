@@ -1,10 +1,4 @@
-﻿  stdafx.cpp
-  ppo2.cpp
-c:\users\ultranb\documents\visual studio 2017\projects\lppo2\ppo2\ppo2.cpp(21): warning C4018: <: несоответствие типов со знаком и без знака
-  MyQueue.cpp
-c:\users\ultranb\documents\visual studio 2017\projects\lppo2\ppo2\myqueue.cpp(90): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\ultranb\documents\visual studio 2017\projects\lppo2\ppo2\myqueue.cpp(96): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\ultranb\documents\visual studio 2017\projects\lppo2\ppo2\myqueue.cpp(98): warning C4018: <: несоответствие типов со знаком и без знака
-  Создание кода...
+﻿  ppo2.cpp
+c:\users\ultranb\documents\visual studio 2017\projects\lppo2\ppo2\ppo2.cpp(20): warning C4018: <: несоответствие типов со знаком и без знака
   ppo2.vcxproj -> C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\lppo2\Debug\ppo2.exe
   ppo2.vcxproj -> C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\lppo2\Debug\ppo2.pdb (Partial PDB)

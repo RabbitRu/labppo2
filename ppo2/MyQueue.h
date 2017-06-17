@@ -1,11 +1,10 @@
 #include <vector>
 #include <stack>
 #pragma once
-#include "Ique.h"
 #define MAX_ELEMENTS 5
 using namespace std;
 
-class MyQueue : public Ique
+class MyQueue
 {
 public:
 	MyQueue();

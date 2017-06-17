@@ -2,12 +2,11 @@
 //
 
 #include "stdafx.h"
-#include "Ique.h"
 #include "MyQueue.h"
 
 int main()
 {
-	Ique * qe = new MyQueue();
+	MyQueue qe;
 	vector<int> queue;
 	rand();
 	int code, output, min = 0, max = 10;
@@ -15,9 +14,9 @@ int main()
 	scanf_s("%d", &code);
 	while (code != 0) {
 		output = min + (rand() % (max - min + 1));
-		qe->enqueue(output);
-		queue = ((MyQueue*)qe)->getQueue();
-		printf("max:%d min:%d queue:", qe->maximum(), qe->minimum());
+		qe.enqueue(output);
+		queue = qe.getQueue();
+		printf("max:%d min:%d queue:", qe.maximum(), qe.minimum());
 		for (int i = 0; i < queue.size(); i++)
 			printf("%d ", queue[i]);
 		printf("\n");
